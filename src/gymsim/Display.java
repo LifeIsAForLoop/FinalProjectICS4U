@@ -4,10 +4,9 @@
  */
 package gymsim;
 
-import java.awt.Canvas;
+import java.awt.*;
 import java.awt.Graphics2D;
 import javax.swing.JFrame;
-import java.awt.Canvas;
 import javax.swing.*;
 
 /**
@@ -19,11 +18,17 @@ public class Display extends JFrame {
     private Canvas canvas;
 
     public Display(int width, int height) {
-        JFrame frame = new JFrame("My Drawing");
+        JFrame frame = new JFrame("Gym Sim");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setResizable(false);
+        
         Canvas canvas = new Canvas(); // Start the canvas
-        canvas.setSize(400, 400);
-        frame.add(canvas);
-        frame.pack();
-        frame.setVisible(true);
+        canvas.setPreferredSize(new Dimension(width, height));
+        canvas.setFocusable(false);
+        add(canvas);
+        pack();
+        
+        setLocationRelativeTo(null);
+        setVisible(true);
     }
 }
