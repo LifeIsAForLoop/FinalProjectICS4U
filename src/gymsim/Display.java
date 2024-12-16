@@ -23,7 +23,7 @@ public class Display extends JFrame {
         setResizable(false);
         
         Canvas canvas = new Canvas(); // Start the canvas
-        canvas.setPreferredSize(new Dimension(width, height));
+        canvas.setPreferredSize(new Dimension(width, height)); //Must create a new dimension object for the height and width
         canvas.setFocusable(false);
         add(canvas);
         pack();

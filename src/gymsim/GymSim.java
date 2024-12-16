@@ -22,7 +22,9 @@ public class GymSim extends Canvas {
     public static void main(String[] args) {
         Display display = new Display(1000, 800);
     }
-
+    
+    
+ 
 
 }
 
