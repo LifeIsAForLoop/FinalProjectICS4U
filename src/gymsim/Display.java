@@ -11,7 +11,7 @@ import javax.swing.*;
 
 /**
  *
- * @author XaKit0340
+ * @author 
  */
 public class Display extends JFrame {
 
