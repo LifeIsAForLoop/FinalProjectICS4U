@@ -3,7 +3,7 @@
  */
 package gymsim;
 
-public class Supplement {
+public class Supplement extends Item {
 
     long duration;
 

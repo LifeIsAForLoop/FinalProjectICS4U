@@ -1,27 +1,21 @@
-/* Exercise Class
+/* CharacterMovement Class
  */
 package gymsim;
 
 
-public class Exercise {
+public class CharacterMovement {
     // Attributes 
     Sprite sprite; 
     String name; 
-    int weight; 
-    int repCount; 
     int xPos; 
     int yPos; 
 
-    public Exercise() {
-    }
 
-    public Exercise(Sprite sprite, String name, int weight, int repCount, int xPos, int yPos) {
+
+    public CharacterMovement(Sprite sprite, String name, int xPos, int yPos) {
         // Constructor chaining 
-        this();
         this.sprite = sprite;
         this.name = name;
-        this.weight = weight;
-        this.repCount = repCount;
         this.xPos = xPos;
         this.yPos = yPos;
     }
@@ -42,21 +36,10 @@ public class Exercise {
         this.name = name;
     }
 
-    public int getWeight() {
-        return weight;
-    }
 
-    public void setWeight(int weight) {
-        this.weight = weight;
-    }
 
-    public int getRepCount() {
-        return repCount;
-    }
 
-    public void setRepCount(int repCount) {
-        this.repCount = repCount;
-    }
+
 
     public int getxPos() {
         return xPos;

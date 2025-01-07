@@ -8,6 +8,7 @@ import java.awt.*;
 import java.awt.Graphics2D;
 import javax.swing.JFrame;
 import javax.swing.*;
+import javax.swing.JPanel;
 
 /**
  *
@@ -15,20 +16,13 @@ import javax.swing.*;
  */
 public class Display extends JFrame {
 
-    private Canvas canvas;
 
     public Display(int width, int height) {
         JFrame frame = new JFrame("Gym Sim");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
-        
-        Canvas canvas = new Canvas(); // Start the canvas
-        canvas.setPreferredSize(new Dimension(width, height)); //Must create a new dimension object for the height and width
-        canvas.setFocusable(false);
-        add(canvas);
-        pack();
-        
+        setTitle("Gym Sim");
         setLocationRelativeTo(null);
-        setVisible(true);
+        
     }
 }

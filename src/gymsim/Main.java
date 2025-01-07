@@ -14,11 +14,12 @@ import javax.swing.*;
 /**
  * @param args the command line arguments
  */
-public class GymSim extends Canvas {
+public class Main  {
     
     
     public static void main(String[] args) {
         Display display = new Display(1000, 800);
+        
     }
     
     
