@@ -81,7 +81,6 @@ public class GamePanel extends JPanel implements MouseListener, Runnable {
         beforeTime = System.currentTimeMillis();
 
         while (true) { //this loop runs once ever 25 ms (the DELAY)
-
             //update the balls position   
             //redraws the screen (calling the paint component method)
             repaint();
