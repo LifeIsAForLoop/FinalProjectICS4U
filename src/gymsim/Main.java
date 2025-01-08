@@ -20,7 +20,7 @@ public class Main {
     public static void main(String[] args) {
         //makes sure that GUI updates nicely with the rest of the OS
         EventQueue.invokeLater(() -> {
-        Display display = new Display(1200, 1200);
+        Display display = new Display(1920, 1080);
         display.setVisible(true);
         });
     }

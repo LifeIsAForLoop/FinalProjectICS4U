@@ -19,10 +19,9 @@ public class Display extends JFrame {
 
     public Display(int width, int height) {
         JFrame frame = new JFrame("Gym Sim");
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setResizable(false);
-        setTitle("Gym Sim");
-        setLocationRelativeTo(null);
-        
+        frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        frame.setResizable(false);
+        frame.setTitle("Gym Sim");
+        frame.setLocationRelativeTo(null);
     }
 }
