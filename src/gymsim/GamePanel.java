@@ -12,7 +12,7 @@ package gymsim;
  * B Cutten
     May 2022
     A class which allows drawing, because it extends JPanel, by way of the 
-    Graphics2D class
+    Graphics2D classc
     A timer is added to the constructor so that the panel is repainted regulary
     and can be animated
  */
