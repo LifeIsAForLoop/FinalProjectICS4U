@@ -31,7 +31,7 @@ public class GamePanel extends JPanel implements MouseListener, Runnable {
 
     //an arraylist grows as we add items to it
     private Thread animator;
-    private final int DELAY = 25;
+    private final int DELAY = 35;
 
     public GamePanel() { //constructor for the panel      
 
@@ -107,8 +107,15 @@ public class GamePanel extends JPanel implements MouseListener, Runnable {
             }
             //get the new current time
             beforeTime = System.currentTimeMillis();
+            
+            
+            //Call drawing methods here
+            
+            
         }
     }
+    
+    //Keyboard and Mouse Inputs
 
     @Override
     public void mouseClicked(MouseEvent e) {
