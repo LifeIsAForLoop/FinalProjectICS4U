@@ -1,45 +1,24 @@
-/* GymSim class
- */
 package gymsim;
 
-import java.awt.Graphics2D;
-import javax.swing.JFrame;
-import java.awt.Canvas;
-import java.awt.Dimension;
-import java.awt.EventQueue;
 import javax.swing.*;
+import java.awt.*;
 
-/**
- *
- * @author XaKit0340
- */
-/**
- * @param args the command line arguments
- */
 public class GymSim extends JFrame {
-
     public GymSim() {
+        setTitle("GymSim");
+        setSize(1920, 1080);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        setResizable(false);
 
-        super("Gym Sim");
+        // Add the game panel
+        GamePanel gamePanel = new GamePanel();
+        add(gamePanel);
 
-        new Dimension(300, 300);
-        setMaximumSize(new Dimension(300, 300));
-        setMinimumSize(new Dimension(300, 300));
-        pack();
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
+        setVisible(true);
     }
-    
-    public void startGame(boolean start) {
-       setVisible(start);
-    }
-    
+
     public static void main(String[] args) {
-        //makes sure that GUI updates nicely with the rest of the OS
-        EventQueue.invokeLater(() -> {
-            GymSim gameFrame = new GymSim();
-            startGame(true);
-            });
-                
+        EventQueue.invokeLater(GymSim::new);
     }
 }

@@ -1,30 +1,30 @@
-/* Map class
- */
 package gymsim;
 
+import java.awt.Image;
+import java.awt.Graphics;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
 
 public class Map {
-// Attributes 
     private int width;
     private int height;
-    private Sprite[] object; 
-    public Map(int width, int height) {
-       
+    private Image mapImage;
+
+    public Map(String url, int width, int height) {
+        this.width = width;
+        this.height = height;
+
+        try {
+            mapImage = ImageIO.read(new File(url));
+        } catch (IOException ex) {
+            System.out.println("Image handling error: " + ex.getMessage());
+        }
     }
-    
-    public void addObject(Sprite object) {
-        
+
+    public void draw(Graphics g) {
+        if (mapImage != null) {
+            g.drawImage(mapImage, 0, 0, width, height, null);
+        }
     }
-    
-    public void RemoveObject(Sprite object) {
-        
-    }
-    
-    public boolean withinBounds(int x, int y) {
-        return false; 
-    }
-    public Sprite checkInteraction(int x, int y) {
-        return null;
-    }
-    
 }
